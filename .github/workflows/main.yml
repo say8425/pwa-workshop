@@ -26,7 +26,7 @@ jobs:
         name: app
         path: build
   deploy_to_dev:
-    needs: build_and_publish
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Download app
